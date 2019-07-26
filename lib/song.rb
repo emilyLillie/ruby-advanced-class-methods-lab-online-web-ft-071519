@@ -129,6 +129,7 @@ class Song
     # song_name, extension = title[1].split(".")
     self.new_from_filename(filename)
     song = self.create 
+    song 
     # song.artist_name = artist 
     # song.name = song_name 
     # song 
