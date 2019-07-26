@@ -130,7 +130,7 @@ class Song
     
     song = self.create 
     self.new_from_filename(filename)
-    song 
+   
     # song.artist_name = artist 
     # song.name = song_name 
     # song 
