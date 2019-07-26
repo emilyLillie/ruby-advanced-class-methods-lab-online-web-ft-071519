@@ -111,6 +111,17 @@ class Song
   def self.alphabetical
     @@all.sort_by {|song| song.name}
   end 
+  
+  def self.new_from_filename(filename)
+    title = filename.split(" - ")
+    artist = title[0]
+    song_name, extension = title[1].split(".")
+
+    song = self.new 
+    song.artist_name = artist 
+    song.name = song_name 
+    song 
+  end
  
 end
 
